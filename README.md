@@ -1,9 +1,11 @@
-# rwth-opencast-downloader
-A Chrome extension to download videos available on the RWTH OpenCast Paella server.
+# ude-opencast-downloader
+## A fork of [rwth-opencast-downloader](https://github.com/MangelWare/rwth-opencast-downloader)
+
+A Chrome extension to download videos available on the UDE OpenCast Paella server.
 
 ### Usage
 
-When you are on an RWTH Moodle page with an embedded Opencast video, start the video, and click on the extension.
+When you are on a UDE Moodle page with an embedded Opencast video, start the video, and click on the extension.
 
 The popup should show the available contents with their resolution. Click on one of the download buttons to start downloading the MP4 file.
 

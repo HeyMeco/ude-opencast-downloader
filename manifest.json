@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "RWTH Opencast Downloader",
+    "name": "UDE Opencast Downloader",
     "version": "0.0.2",
     "icons": {
         "32": "logo_32.png",
@@ -8,7 +8,7 @@
         "64": "logo_64.png",
         "128": "logo_128.png"
     },
-    "description": "Allows to easily download the MP4 video sources of the RWTH Opencast player embedded in the RWTH Moodle.",
+    "description": "Allows to easily download the MP4 video sources of the UDE Opencast player embedded in the UDE Moodle.",
     "author": "Simon Mangel",
     "action": {
         "default_popup": "popup.html"
@@ -16,7 +16,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://engage.streaming.rwth-aachen.de/*paella/ui/watch.html**"
+                "https://opencast.uni-due.de/*paella/ui/watch.html**"
             ],
             "all_frames": true,
             "js": [
@@ -30,7 +30,7 @@
                 "opencast-inject-inner.js"
             ],
             "matches": [
-                "https://engage.streaming.rwth-aachen.de/*"
+                "https://opencast.uni-due.de/*"
             ]
         }
     ]

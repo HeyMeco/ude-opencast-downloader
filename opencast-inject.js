@@ -2,7 +2,7 @@ const _DEBUG = false;
 
 _log = (str) => {
     if (_DEBUG) {
-        console.log(`[RWTHOCDL] ${str}`)
+        console.log(`[UDEOCDL] ${str}`)
     }
 }
 
@@ -16,16 +16,16 @@ function getStreams(callback) {
     script.onload = function () {
         _log("onload called!");
         setTimeout(() => {
-            if (document.body.getAttribute('rwthocdl_contents') === "not_loaded") {
+            if (document.body.getAttribute('udeocdl_contents') === "not_loaded") {
                 script.remove();
                 callback(null);
             } else {
-                let contents = document.body.getAttribute('rwthocdl_contents').split(',');
+                let contents = document.body.getAttribute('udeocdl_contents').split(',');
                 _log(contents)
                 let res = {}
                 contents.forEach((content) => {
-                    let hrefs = document.body.getAttribute(`rwthocdl_${content}_hrefs`).split('|');
-                    let resolutions = document.body.getAttribute(`rwthocdl_${content}_res`).split(',');
+                    let hrefs = document.body.getAttribute(`udeocdl_${content}_hrefs`).split('|');
+                    let resolutions = document.body.getAttribute(`udeocdl_${content}_res`).split(',');
                     res[content] = { sources: [] }
                     for (let i = 0; i < hrefs.length; i++) {
                         const href = hrefs[i];
