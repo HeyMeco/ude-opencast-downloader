@@ -5,9 +5,9 @@ A Chrome extension to download videos available on the UDE OpenCast Paella serve
 
 ### Usage
 
-When you are on a UDE Moodle page with an embedded Opencast video, start the video, and click on the extension.
-
-The popup should show the available contents with their resolution. Click on one of the download buttons to start downloading the MP4 file.
+1. When you are logged in your UDE Moodle click on the 'https://opencast.uni-due.de' Link with your video that you want to download.
+2. Start the video and click on the extension icon.
+3. The popup should show the available contents with their resolution. Click on one of the download buttons to start downloading the MP4 file.
 
 ### How does it work?
 
